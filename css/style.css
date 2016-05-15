@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url('../fonts/MaterialIcons-Regular.woff2') format('woff2'), url('../fonts/MaterialIcons-Regular.woff') format('woff'), url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.btn {
+  border: none;
+  outline: none;
+  color: #353535;
+  background-color: #eee;
+  padding: 0.5em;
+  cursor: pointer;
+  box-shadow: 0 1px 1px 0px #aaa;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn:active {
+  background-color: #ccc;
+}
+.btn[disabled] {
+  background-color: #eee;
+  color: #999;
+  cursor: no-drop;
+}
+.btn.btn-lrg {
+  padding: 1em;
+}
+.app-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 2em;
+  text-align: center;
+}
+.app-wrapper .table-container {
+  display: inline-block;
+}
+.app-wrapper .table-container table {
+  color: #353535;
+  border-collapse: collapse;
+  box-shadow: 0 0 1em 0 #ddd;
+}
+.app-wrapper .table-container table caption {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.app-wrapper .table-container table thead {
+  border: 1px solid #eee;
+}
+.app-wrapper .table-container table thead .table-header {
+  padding: 1em;
+  padding-left: 1.5em;
+  cursor: pointer;
+}
+.app-wrapper .table-container table thead .table-header .material-icons {
+  font-size: 1em;
+  line-height: 1;
+}
+.app-wrapper .table-container table thead .table-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.app-wrapper .table-container table tbody {
+  border: 1px solid #eee;
+}
+.app-wrapper .table-container table tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.app-wrapper .table-container table tbody tr td {
+  padding: 0.5em;
+}
+.app-wrapper .table-container table tbody tr td .checkContact {
+  display: none;
+}
+.app-wrapper .table-container table tbody tr td .checkContact + label {
+  cursor: pointer;
+  color: #777;
+}
+.app-wrapper .table-container table tbody tr td .checkContact + label:hover {
+  color: #444;
+}
+.app-wrapper .table-container table tbody tr td.contact-action {
+  position: absolute;
+  width: 5em;
+  margin-left: 0.25em;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.app-wrapper .table-container table tbody tr td.contact-action .btn {
+  margin: 0.25em 0;
+  padding: 0.25em;
+  width: 4em;
+}
+.form-container {
+  display: block;
+}
+.form-container form {
+  position: absolute;
+  width: 20em;
+  height: auto;
+  left: 50%;
+  top: 25%;
+  margin-left: -10em;
+  display: block;
+  padding: 2em;
+  background-color: #fff;
+  z-index: 100;
+}
+.form-container form .input-container p {
+  padding: 0;
+  margin: 0;
+}
+.form-container form .input-container label {
+  display: block;
+  float: left;
+  width: 50%;
+  color: #454545;
+  font-size: 0.75em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.form-container form .input-container label:hover {
+  background-color: #eee;
+}
+.form-container form .input-container label:active {
+  background-color: #ccc;
+}
+.form-container form .input-container label.active {
+  background-color: #eee;
+}
+.form-container form .input-container label ~ .warn-msg {
+  color: #f08080;
+  font-size: 0.75em;
+}
+.form-container form .input-container input {
+  padding: 0.5em;
+  width: 100%;
+  color: #353535;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  outline: none;
+}
+.form-container form .input-container input ~ .warn-msg {
+  visibility: hidden;
+}
+.form-container form .input-container input.warn {
+  border-bottom: 1px solid #f08080;
+}
+.form-container form .input-container input.warn ~ .warn-msg {
+  visibility: visible;
+  color: #f08080;
+  font-size: 0.75em;
+}
+.form-container form .input-container input.radiobtn {
+  display: none;
+}
+.form-container .form-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
